@@ -19,7 +19,7 @@ COPY --chown=node:node src/ ./src/
 COPY --chown=node:node db/ ./db/
 
 # Use non-root user
-USER node
+USER 1000
 
 # Backend port
 EXPOSE 3000
